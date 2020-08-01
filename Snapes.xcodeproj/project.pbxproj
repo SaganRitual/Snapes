@@ -19,6 +19,7 @@
 		D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283324D5E911000CC1DB /* ArkoniaLayout.swift */; };
 		D449283624D5EE7E000CC1DB /* LineChartXLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */; };
 		D449283824D5F080000CC1DB /* LineChartHLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283724D5F080000CC1DB /* LineChartHLinesView.swift */; };
+		D449283A24D5F710000CC1DB /* LineChartVLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283924D5F710000CC1DB /* LineChartVLinesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		D449283324D5E911000CC1DB /* ArkoniaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkoniaLayout.swift; sourceTree = "<group>"; };
 		D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartXLabelsView.swift; sourceTree = "<group>"; };
 		D449283724D5F080000CC1DB /* LineChartHLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartHLinesView.swift; sourceTree = "<group>"; };
+		D449283924D5F710000CC1DB /* LineChartVLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartVLinesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */,
 				D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */,
 				D449283724D5F080000CC1DB /* LineChartHLinesView.swift */,
+				D449283924D5F710000CC1DB /* LineChartVLinesView.swift */,
 			);
 			path = Snapes;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			files = (
 				D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */,
 				D449283624D5EE7E000CC1DB /* LineChartXLabelsView.swift in Sources */,
+				D449283A24D5F710000CC1DB /* LineChartVLinesView.swift in Sources */,
 				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
 				D449283824D5F080000CC1DB /* LineChartHLinesView.swift in Sources */,
 				D449283024D5DBE1000CC1DB /* LineChartGraphView.swift in Sources */,

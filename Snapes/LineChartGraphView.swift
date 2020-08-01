@@ -36,6 +36,14 @@ struct LineChartGraphView: View {
                     y: textUnitSize.height
                 )
 
+            LineChartVLinesView()
+                .frame(width: 1.0 * xScale, height: 1.0 * yScale)
+                .foregroundColor(Color(white: 0.3))
+                .offset(
+                    x: (textUnitSize.width * 4.8 / 6) + 0.1 * xScale,
+                    y: textUnitSize.height
+                )
+
             LineChartYLabelsView()
                 .frame(width: 0.1 * xScale, height: 1.0 * yScale)
                 .background(Color(white: 0.5))
