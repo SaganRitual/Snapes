@@ -33,27 +33,27 @@ struct LineChartGraphView: View {
                 .foregroundColor(Color(white: 0.3))
                 .offset(
                     x: textUnitSize.width * 0.8,
-                    y: textUnitSize.height
+                    y: textUnitSize.height * 1
                 )
 
             LineChartVLinesView()
-                .frame(width: 1.0 * xScale, height: 1.0 * yScale)
+                .frame(width: 1.0 * xScale, height: 1.1 * yScale)
                 .foregroundColor(Color(white: 0.3))
                 .offset(
-                    x: (textUnitSize.width * 4.8 / 6) + 0.1 * xScale,
-                    y: textUnitSize.height
+                    x: (-0.8 * textUnitSize.width) + 0.1 * xScale,
+                    y: -2 * textUnitSize.height
                 )
 
             LineChartYLabelsView()
                 .frame(width: 0.1 * xScale, height: 1.0 * yScale)
-                .background(Color(white: 0.5))
+                .background(Color(white: 0.4))
                 .offset(x: -0.5 * xScale, y: (-0.05 * yScale))
 
             LineChartXLabelsView()
                 .frame(width: 1.0 * xScale, height: 0.1 * yScale)
-                .background(Color(white: 0.5))
+                .background(Color(white: 0.4))
                 .offset(x: 0.05 * xScale, y: 0.5 * yScale)
-        }.background(Color(white: 0.5))
+        }
     }
 }
 

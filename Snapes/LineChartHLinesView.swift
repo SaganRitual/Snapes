@@ -16,7 +16,6 @@ struct LineChartHLinesView: View {
                 ForEach(0..<10) { rowNumber in
                     Rectangle()
                         .frame(height: 1)   // 1px high
-                        .opacity(rowNumber < 9 ? 1 : 0)
 
                     Spacer()
                 }

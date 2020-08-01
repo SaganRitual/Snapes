@@ -16,7 +16,7 @@ struct LineChartVLinesView: View {
                 ForEach(0..<10) { columnNumber in
                     Rectangle()
                         .frame(width: 1)   // 1px wide
-                        .opacity(columnNumber < 9 ? 1 : 0)
+//                        .opacity(columnNumber < 9 ? 1 : 0)
 
                     Spacer()
                 }
