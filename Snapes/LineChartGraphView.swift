@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LineChartGraphView: View {
-    @State var textUnitSize = CGSize.zero
+    @State var textUnitSize = ArkoniaLayout.labelTextSize
 
     let scale: CGSize
     let xScale: CGFloat
@@ -22,20 +22,30 @@ struct LineChartGraphView: View {
 
     var body: some View {
         ZStack {
+            // I think and hope this one is holding the size of
+            // our overall graph view section fixed
             Rectangle()
                 .frame(width: 1.1 * xScale, height: 1.1 * yScale)
-                .background(Color(white: 0.9))
+                .foregroundColor(Color(white: 0.4))
+
+            LineChartHLinesView()
+                .frame(width: 1.0 * xScale, height: 1.0 * yScale)
+                .foregroundColor(Color(white: 0.3))
+                .offset(
+                    x: textUnitSize.width * 0.8,
+                    y: textUnitSize.height
+                )
 
             LineChartYLabelsView()
                 .frame(width: 0.1 * xScale, height: 1.0 * yScale)
                 .background(Color(white: 0.5))
                 .offset(x: -0.5 * xScale, y: (-0.05 * yScale))
 
-            Rectangle()
+            LineChartXLabelsView()
                 .frame(width: 1.0 * xScale, height: 0.1 * yScale)
                 .background(Color(white: 0.5))
                 .offset(x: 0.05 * xScale, y: 0.5 * yScale)
-        }
+        }.background(Color(white: 0.5))
     }
 }
 
