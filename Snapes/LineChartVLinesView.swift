@@ -14,15 +14,11 @@ struct LineChartVLinesView: View {
         GeometryReader { gr in
             HStack {
                 ForEach(0..<10) { columnNumber in
-                    Rectangle()
-                        .frame(width: 1)   // 1px wide
-//                        .opacity(columnNumber < 9 ? 1 : 0)
-
+                    Rectangle().frame(width: 1)   // 1px wide
                     Spacer()
                 }
             }
         }
-
     }
 }
 

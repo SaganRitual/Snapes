@@ -28,6 +28,9 @@ struct LineChartGraphView: View {
                 .frame(width: 1.1 * xScale, height: 1.1 * yScale)
                 .foregroundColor(Color(white: 0.4))
 
+            LineChartLineView(xScale: xScale, yScale: yScale)
+                .frame(width: xScale, height: yScale)
+
             LineChartHLinesView()
                 .frame(width: 1.0 * xScale, height: 1.0 * yScale)
                 .foregroundColor(Color(white: 0.3))

@@ -14,14 +14,11 @@ struct LineChartHLinesView: View {
         GeometryReader { gr in
             VStack {
                 ForEach(0..<10) { rowNumber in
-                    Rectangle()
-                        .frame(height: 1)   // 1px high
-
+                    Rectangle().frame(height: 1)   // 1px high
                     Spacer()
                 }
             }
         }
-
     }
 }
 
