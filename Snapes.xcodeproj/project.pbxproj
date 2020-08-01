@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449280024D5D65B000CC1DB /* AppDelegate.swift */; };
+		D449280324D5D65B000CC1DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449280224D5D65B000CC1DB /* ContentView.swift */; };
+		D449280524D5D65B000CC1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D449280424D5D65B000CC1DB /* Assets.xcassets */; };
+		D449280824D5D65B000CC1DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D449280724D5D65B000CC1DB /* Preview Assets.xcassets */; };
+		D449280B24D5D65B000CC1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449280924D5D65B000CC1DB /* Main.storyboard */; };
+		D449281724D5D65B000CC1DB /* SnapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449281624D5D65B000CC1DB /* SnapesTests.swift */; };
+		D449282224D5D65B000CC1DB /* SnapesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449282124D5D65B000CC1DB /* SnapesUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D449281324D5D65B000CC1DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44927F524D5D65A000CC1DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44927FC24D5D65B000CC1DB;
+			remoteInfo = Snapes;
+		};
+		D449281E24D5D65B000CC1DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D44927F524D5D65A000CC1DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44927FC24D5D65B000CC1DB;
+			remoteInfo = Snapes;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D44927FD24D5D65B000CC1DB /* Snapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D449280024D5D65B000CC1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D449280224D5D65B000CC1DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D449280424D5D65B000CC1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D449280724D5D65B000CC1DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D449280A24D5D65B000CC1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D449280C24D5D65B000CC1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D449280D24D5D65B000CC1DB /* Snapes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Snapes.entitlements; sourceTree = "<group>"; };
+		D449281224D5D65B000CC1DB /* SnapesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D449281624D5D65B000CC1DB /* SnapesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapesTests.swift; sourceTree = "<group>"; };
+		D449281824D5D65B000CC1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D449281D24D5D65B000CC1DB /* SnapesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D449282124D5D65B000CC1DB /* SnapesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapesUITests.swift; sourceTree = "<group>"; };
+		D449282324D5D65B000CC1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D44927FA24D5D65B000CC1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449280F24D5D65B000CC1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449281A24D5D65B000CC1DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D44927F424D5D65A000CC1DB = {
+			isa = PBXGroup;
+			children = (
+				D44927FF24D5D65B000CC1DB /* Snapes */,
+				D449281524D5D65B000CC1DB /* SnapesTests */,
+				D449282024D5D65B000CC1DB /* SnapesUITests */,
+				D44927FE24D5D65B000CC1DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D44927FE24D5D65B000CC1DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D44927FD24D5D65B000CC1DB /* Snapes.app */,
+				D449281224D5D65B000CC1DB /* SnapesTests.xctest */,
+				D449281D24D5D65B000CC1DB /* SnapesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D44927FF24D5D65B000CC1DB /* Snapes */ = {
+			isa = PBXGroup;
+			children = (
+				D449280024D5D65B000CC1DB /* AppDelegate.swift */,
+				D449280224D5D65B000CC1DB /* ContentView.swift */,
+				D449280424D5D65B000CC1DB /* Assets.xcassets */,
+				D449280924D5D65B000CC1DB /* Main.storyboard */,
+				D449280C24D5D65B000CC1DB /* Info.plist */,
+				D449280D24D5D65B000CC1DB /* Snapes.entitlements */,
+				D449280624D5D65B000CC1DB /* Preview Content */,
+			);
+			path = Snapes;
+			sourceTree = "<group>";
+		};
+		D449280624D5D65B000CC1DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D449280724D5D65B000CC1DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D449281524D5D65B000CC1DB /* SnapesTests */ = {
+			isa = PBXGroup;
+			children = (
+				D449281624D5D65B000CC1DB /* SnapesTests.swift */,
+				D449281824D5D65B000CC1DB /* Info.plist */,
+			);
+			path = SnapesTests;
+			sourceTree = "<group>";
+		};
+		D449282024D5D65B000CC1DB /* SnapesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D449282124D5D65B000CC1DB /* SnapesUITests.swift */,
+				D449282324D5D65B000CC1DB /* Info.plist */,
+			);
+			path = SnapesUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D44927FC24D5D65B000CC1DB /* Snapes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D449282624D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "Snapes" */;
+			buildPhases = (
+				D44927F924D5D65B000CC1DB /* Sources */,
+				D44927FA24D5D65B000CC1DB /* Frameworks */,
+				D44927FB24D5D65B000CC1DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Snapes;
+			productName = Snapes;
+			productReference = D44927FD24D5D65B000CC1DB /* Snapes.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D449281124D5D65B000CC1DB /* SnapesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D449282924D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "SnapesTests" */;
+			buildPhases = (
+				D449280E24D5D65B000CC1DB /* Sources */,
+				D449280F24D5D65B000CC1DB /* Frameworks */,
+				D449281024D5D65B000CC1DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D449281424D5D65B000CC1DB /* PBXTargetDependency */,
+			);
+			name = SnapesTests;
+			productName = SnapesTests;
+			productReference = D449281224D5D65B000CC1DB /* SnapesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D449281C24D5D65B000CC1DB /* SnapesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D449282C24D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "SnapesUITests" */;
+			buildPhases = (
+				D449281924D5D65B000CC1DB /* Sources */,
+				D449281A24D5D65B000CC1DB /* Frameworks */,
+				D449281B24D5D65B000CC1DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D449281F24D5D65B000CC1DB /* PBXTargetDependency */,
+			);
+			name = SnapesUITests;
+			productName = SnapesUITests;
+			productReference = D449281D24D5D65B000CC1DB /* SnapesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D44927F524D5D65A000CC1DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					D44927FC24D5D65B000CC1DB = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					D449281124D5D65B000CC1DB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D44927FC24D5D65B000CC1DB;
+					};
+					D449281C24D5D65B000CC1DB = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = D44927FC24D5D65B000CC1DB;
+					};
+				};
+			};
+			buildConfigurationList = D44927F824D5D65A000CC1DB /* Build configuration list for PBXProject "Snapes" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D44927F424D5D65A000CC1DB;
+			productRefGroup = D44927FE24D5D65B000CC1DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D44927FC24D5D65B000CC1DB /* Snapes */,
+				D449281124D5D65B000CC1DB /* SnapesTests */,
+				D449281C24D5D65B000CC1DB /* SnapesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D44927FB24D5D65B000CC1DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D449280B24D5D65B000CC1DB /* Main.storyboard in Resources */,
+				D449280824D5D65B000CC1DB /* Preview Assets.xcassets in Resources */,
+				D449280524D5D65B000CC1DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449281024D5D65B000CC1DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449281B24D5D65B000CC1DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D44927F924D5D65B000CC1DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
+				D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449280E24D5D65B000CC1DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D449281724D5D65B000CC1DB /* SnapesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D449281924D5D65B000CC1DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D449282224D5D65B000CC1DB /* SnapesUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D449281424D5D65B000CC1DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44927FC24D5D65B000CC1DB /* Snapes */;
+			targetProxy = D449281324D5D65B000CC1DB /* PBXContainerItemProxy */;
+		};
+		D449281F24D5D65B000CC1DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44927FC24D5D65B000CC1DB /* Snapes */;
+			targetProxy = D449281E24D5D65B000CC1DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D449280924D5D65B000CC1DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D449280A24D5D65B000CC1DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D449282424D5D65B000CC1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D449282524D5D65B000CC1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		D449282724D5D65B000CC1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snapes/Snapes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Snapes/Preview Content\"";
+				DEVELOPMENT_TEAM = DD983V4X84;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Snapes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.Snapes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D449282824D5D65B000CC1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Snapes/Snapes.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Snapes/Preview Content\"";
+				DEVELOPMENT_TEAM = DD983V4X84;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Snapes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.Snapes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D449282A24D5D65B000CC1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = SnapesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.SnapesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapes.app/Contents/MacOS/Snapes";
+			};
+			name = Debug;
+		};
+		D449282B24D5D65B000CC1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = SnapesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.SnapesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Snapes.app/Contents/MacOS/Snapes";
+			};
+			name = Release;
+		};
+		D449282D24D5D65B000CC1DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = SnapesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.SnapesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Snapes;
+			};
+			name = Debug;
+		};
+		D449282E24D5D65B000CC1DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = DD983V4X84;
+				INFOPLIST_FILE = SnapesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.boringsoftware.SnapesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Snapes;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D44927F824D5D65A000CC1DB /* Build configuration list for PBXProject "Snapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D449282424D5D65B000CC1DB /* Debug */,
+				D449282524D5D65B000CC1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D449282624D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "Snapes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D449282724D5D65B000CC1DB /* Debug */,
+				D449282824D5D65B000CC1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D449282924D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "SnapesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D449282A24D5D65B000CC1DB /* Debug */,
+				D449282B24D5D65B000CC1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D449282C24D5D65B000CC1DB /* Build configuration list for PBXNativeTarget "SnapesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D449282D24D5D65B000CC1DB /* Debug */,
+				D449282E24D5D65B000CC1DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D44927F524D5D65A000CC1DB /* Project object */;
+}
