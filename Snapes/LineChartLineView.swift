@@ -14,7 +14,7 @@ struct LineChartLineView: View {
     let yScale: CGFloat
 
     func drawLine(_ viewWidth: CGFloat, _ viewHeight: CGFloat) -> Path {
-        let points: [CGPoint] = (0..<10).map {
+        let points: [CGPoint] = (0..<11).map {
             CGSize(width: viewWidth, height: viewHeight).asPoint() *
             CGPoint(x: CGFloat($0), y: CGFloat.random(in: 0..<10)) / 10
         }
