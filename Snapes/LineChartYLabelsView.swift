@@ -16,6 +16,7 @@ struct LineChartYLabelsView: View {
                 ForEach(0..<10) { rowNumber in
                     Text(ArkoniaLayout.getLabelText(10 - rowNumber - 1))
                         .font(ArkoniaLayout.labelFont)
+                        .offset(y: textUnitSize.height * 1.5)
 
                     Spacer()
                 }

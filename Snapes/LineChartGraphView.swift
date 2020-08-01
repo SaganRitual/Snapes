@@ -29,7 +29,7 @@ struct LineChartGraphView: View {
             LineChartYLabelsView()
                 .frame(width: 0.1 * xScale, height: 1.0 * yScale)
                 .background(Color(white: 0.5))
-                .offset(x: -0.5 * xScale, y: -0.05 * yScale)
+                .offset(x: -0.5 * xScale, y: (-0.05 * yScale))
 
             Rectangle()
                 .frame(width: 1.0 * xScale, height: 0.1 * yScale)
