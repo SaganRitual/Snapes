@@ -14,6 +14,9 @@
 		D449280B24D5D65B000CC1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449280924D5D65B000CC1DB /* Main.storyboard */; };
 		D449281724D5D65B000CC1DB /* SnapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449281624D5D65B000CC1DB /* SnapesTests.swift */; };
 		D449282224D5D65B000CC1DB /* SnapesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449282124D5D65B000CC1DB /* SnapesUITests.swift */; };
+		D449283024D5DBE1000CC1DB /* LineChartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449282F24D5DBE1000CC1DB /* LineChartGraphView.swift */; };
+		D449283224D5E63D000CC1DB /* LineChartYLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */; };
+		D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283324D5E911000CC1DB /* ArkoniaLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		D449281D24D5D65B000CC1DB /* SnapesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D449282124D5D65B000CC1DB /* SnapesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapesUITests.swift; sourceTree = "<group>"; };
 		D449282324D5D65B000CC1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D449282F24D5DBE1000CC1DB /* LineChartGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartGraphView.swift; sourceTree = "<group>"; };
+		D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartYLabelsView.swift; sourceTree = "<group>"; };
+		D449283324D5E911000CC1DB /* ArkoniaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkoniaLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D44927FF24D5D65B000CC1DB /* Snapes */,
+				D449280624D5D65B000CC1DB /* Preview Content */,
 				D449281524D5D65B000CC1DB /* SnapesTests */,
 				D449282024D5D65B000CC1DB /* SnapesUITests */,
 				D44927FE24D5D65B000CC1DB /* Products */,
@@ -104,7 +111,9 @@
 				D449280924D5D65B000CC1DB /* Main.storyboard */,
 				D449280C24D5D65B000CC1DB /* Info.plist */,
 				D449280D24D5D65B000CC1DB /* Snapes.entitlements */,
-				D449280624D5D65B000CC1DB /* Preview Content */,
+				D449283324D5E911000CC1DB /* ArkoniaLayout.swift */,
+				D449282F24D5DBE1000CC1DB /* LineChartGraphView.swift */,
+				D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */,
 			);
 			path = Snapes;
 			sourceTree = "<group>";
@@ -265,7 +274,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */,
 				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
+				D449283024D5DBE1000CC1DB /* LineChartGraphView.swift in Sources */,
+				D449283224D5E63D000CC1DB /* LineChartYLabelsView.swift in Sources */,
 				D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
