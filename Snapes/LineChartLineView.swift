@@ -17,10 +17,10 @@ struct LineChartLineView: View {
     func drawLine() -> Path {
         let points: [CGPoint] = (0..<10).map {
             CGSize(width: viewWidth, height: viewHeight).asPoint() *
-            CGPoint(x: CGFloat($0), y: CGFloat(histogram.theBuckets[$0].normalized))
+            CGPoint(x: CGFloat($0), y: CGFloat(LineChartGraphView.histogram.theBuckets[$0].cSamples))
         }
 
-        print("drawLine() \(points)")
+//        print("drawLine() \(points)")
         var isFirst = true
         var prevPoint: CGPoint?
         var path = Path()
@@ -49,7 +49,7 @@ struct LineChartLineView: View {
         GeometryReader { gr in
             drawLine()
                 .stroke(lineWidth: 1)
-                .foregroundColor(.white)
+                .foregroundColor(LineChartGraphView.histogram.hackyTrigger ? .white : .blue)
                 .offset(x: gr.size.width / 10 / 2)
         }
     }

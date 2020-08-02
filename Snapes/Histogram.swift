@@ -1,32 +1,41 @@
 import SwiftUI
 
 class Histogram: ObservableObject {
-    class Bucket {
+    class Bucket: CustomDebugStringConvertible {
+        var debugDescription: String { "Bucket hit \(self.cSamples) sum \(self.sumOfAllSamples) avg \(self.average) nrm \(self.normalized)" }
         var getUnitScale: (() -> Double)!
 
         func inject(_ getUnitScale: @escaping () -> Double) { self.getUnitScale = getUnitScale }
 
-        func addSample(_ sample: Double) { cHits += 1; sumOfAllSamples += sample }
+        func addSample(_ sample: Double) {
+            cSamples += 1; sumOfAllSamples += sample
+//            print("addSample(\(sample)) -> cSamples \(cSamples) sum \(sumOfAllSamples)")
+        }
 
-        private var cHits: Int = 0
-        private var sumOfAllSamples: Double = 0
+        private(set) var cSamples: Int = 0
+        private(set) var sumOfAllSamples: Double = 0
 
-        var average: Double { Double(cHits) / sumOfAllSamples }
-        var normalized: Double { average / getUnitScale() }
+        var average: Double { sumOfAllSamples == 0 ? 0 : Double(cSamples) / sumOfAllSamples }
+        var normalized: Double {
+            let us = getUnitScale()
+            if us == 0 { return 0 }
+            return average / us
+        }
     }
 
     let cBuckets: Int
     let dBuckets: Double
     var inputRange: Range<Double>
     let inputRangeMode: InputRangeMode
-    @Published var theBuckets: [Bucket]
+    var theBuckets: [Bucket]
+    @Published var hackyTrigger = false
 
     enum InputRangeMode { case minusOneToOne, zeroToOne, zeroToMax(Int) }
 
     init(_ cColumns: Int, _ inputRangeMode: InputRangeMode) {
         self.cBuckets = cColumns
         self.dBuckets = Double(cColumns)
-        self.theBuckets = [Bucket](repeating: .init(), count: cColumns)
+        self.theBuckets = (0..<cColumns).map { _ in Bucket() }
         self.inputRangeMode = inputRangeMode
 
         switch inputRangeMode {
@@ -51,11 +60,11 @@ class Histogram: ObservableObject {
     }
 
     private func addSample(xAxis: Double, yAxis: Double) {
-        let bucket = getBucketFor(xAxis)
-        bucket.addSample(yAxis)
+        let bucketSS = getBucketFor(xAxis)
+        theBuckets[bucketSS].addSample(yAxis)
     }
 
-    private func getBucketFor(_ value: Double) -> Bucket {
+    private func getBucketFor(_ value: Double) -> Int {
         assert(inputRange.contains(value))
 
         let ss: Int
@@ -77,6 +86,7 @@ class Histogram: ObservableObject {
             ss = s < cBuckets ? s : cBuckets - 1
         }
 
-        return theBuckets[ss]
+//        print("bucket \(ss) ", terminator: "")
+        return ss
     }
 }

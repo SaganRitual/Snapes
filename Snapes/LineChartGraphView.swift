@@ -23,12 +23,13 @@ struct LineChartGraphView: View {
     }
 
     func updateHistogram() {
-        for _ in 0..<100 {
-            LineChartGraphView.histogram.track(
-                cJumps: Int.random(in: 0..<100), against: Int.random(in: 0..<10)
-            )
+        for _ in 0..<10 {
+            LineChartGraphView.histogram.track(sample: Double.random(in: -1..<1))
         }
 
+//        print("update", LineChartGraphView.histogram.theBuckets)
+
+        LineChartGraphView.histogram.hackyTrigger = !LineChartGraphView.histogram.hackyTrigger
         scheduleUpdate()
     }
 
