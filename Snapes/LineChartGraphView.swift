@@ -1,23 +1,35 @@
-//
-//  LineChartGraphVeiw.swift
-//  Snapes
-//
-//  Created by Rob Bishop on 8/1/20.
-//
-
 import SwiftUI
 
 struct LineChartGraphView: View {
     @State var textUnitSize = ArkoniaLayout.labelTextSize
 
+    static let histogram = Histogram(10, .minusOneToOne)
+
     let scale: CGSize
+    var timer: Timer!
     let xScale: CGFloat
     let yScale: CGFloat
 
-    init(_ xScale: CGFloat, _ yScale: CGFloat) {
-        self.xScale = xScale
-        self.yScale = yScale
+    init() {
+        self.xScale = ArkoniaLayout.xScale
+        self.yScale = ArkoniaLayout.yScale
         self.scale = CGSize(width: xScale, height: yScale)
+
+        scheduleUpdate()
+    }
+
+    func scheduleUpdate() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1, execute: updateHistogram)
+    }
+
+    func updateHistogram() {
+        for _ in 0..<100 {
+            LineChartGraphView.histogram.track(
+                cJumps: Int.random(in: 0..<100), against: Int.random(in: 0..<10)
+            )
+        }
+
+        scheduleUpdate()
     }
 
     var body: some View {
@@ -28,7 +40,8 @@ struct LineChartGraphView: View {
                 .frame(width: 1.1 * xScale, height: 1.1 * yScale)
                 .foregroundColor(Color(white: 0.4))
 
-            LineChartLineView(xScale: xScale, yScale: yScale)
+            LineChartLineView(viewWidth: xScale, viewHeight: yScale)
+                .environmentObject(LineChartGraphView.histogram)
                 .frame(width: xScale, height: yScale)
 
             LineChartHLinesView()
@@ -62,6 +75,6 @@ struct LineChartGraphView: View {
 
 struct LineChartGraphView_Previews: PreviewProvider {
     static var previews: some View {
-        LineChartGraphView(450, 300)
+        LineChartGraphView()
     }
 }

@@ -10,12 +10,6 @@ import SwiftUI
 struct ContentView: View {
     @State var textUnitSize = CGSize.zero
 
-    let scale: CGSize
-    let xScale = CGFloat(450)
-    let yScale = CGFloat(300)
-
-    init() { scale = CGSize(width: xScale, height: yScale) }
-
     var body: some View {
         VStack {
             LineChartHeaderView(
@@ -23,18 +17,18 @@ struct ContentView: View {
                 legend1Descriptor: LineChartLegendDescriptor(
                     title: "Current",
                     legendoidDescriptors: [
-                        (.red, "Red"), (.green, "Green")
+                        (.red, "Min"), (.green, "Max")
                     ]
                 ),
                 legend2Descriptor: LineChartLegendDescriptor(
                         title: "All-time",
                         legendoidDescriptors: [
-                            (.blue, "Blue"), (.orange, "Orange")
+                            (.blue, "Min"), (.orange, "Max")
                         ]
                 )
             )
 
-            LineChartGraphView(450, 300)
+            LineChartGraphView().environmentObject(LineChartGraphView.histogram)
         }
     }
 }

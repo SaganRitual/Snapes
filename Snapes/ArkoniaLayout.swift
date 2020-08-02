@@ -1,8 +1,8 @@
 import SwiftUI
 
 enum ArkoniaLayout {
-    static let labelFontSize = CGFloat(14)
-    static let meterFontSize = CGFloat(12)
+    static let labelFontSize = CGFloat(10)
+    static let meterFontSize = CGFloat(8)
 
     static let labelFont = Font.system(
         size: labelFontSize,
@@ -13,6 +13,9 @@ enum ArkoniaLayout {
         size: meterFontSize,
         design: Font.Design.monospaced
     )
+
+    static let xScale = CGFloat(300)
+    static let yScale = CGFloat(200)
 
     static let bodyRatio: CGFloat = 0.9
     static let labelsRatio: CGFloat = 0.1
