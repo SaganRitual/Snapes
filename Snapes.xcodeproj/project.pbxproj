@@ -13,7 +13,7 @@
 		D4288D3324D60C1B0036C629 /* LineChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4288D2F24D60C1B0036C629 /* LineChartHeaderView.swift */; };
 		D4288D4C24D628A10036C629 /* Histogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4288D4B24D628A10036C629 /* Histogram.swift */; };
 		D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449280024D5D65B000CC1DB /* AppDelegate.swift */; };
-		D449280324D5D65B000CC1DB /* BontentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449280224D5D65B000CC1DB /* BontentView.swift */; };
+		D449280324D5D65B000CC1DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449280224D5D65B000CC1DB /* ContentView.swift */; };
 		D449280524D5D65B000CC1DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D449280424D5D65B000CC1DB /* Assets.xcassets */; };
 		D449280824D5D65B000CC1DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D449280724D5D65B000CC1DB /* Preview Assets.xcassets */; };
 		D449280B24D5D65B000CC1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449280924D5D65B000CC1DB /* Main.storyboard */; };
@@ -27,10 +27,9 @@
 		D449283A24D5F710000CC1DB /* LineChartVLinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283924D5F710000CC1DB /* LineChartVLinesView.swift */; };
 		D449283C24D5FB87000CC1DB /* LineChartLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283B24D5FB87000CC1DB /* LineChartLineView.swift */; };
 		D449283E24D5FE6C000CC1DB /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283D24D5FE6C000CC1DB /* Overload2D.swift */; };
-		D4BBE0C324DE95B80075032E /* ChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBE0C124DE95B80075032E /* ChartDataBackdrop.swift */; };
 		D4BBE0C424DE95B80075032E /* ChartBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBE0C224DE95B80075032E /* ChartBody.swift */; };
-		D4D7FF0324DF403800ECDA2C /* LChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7FF0224DF403800ECDA2C /* LChartDataBackdrop.swift */; };
-		D4D7FF0524DF436900ECDA2C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7FF0424DF436900ECDA2C /* ContentView.swift */; };
+		D4D7FF0324DF403800ECDA2C /* ChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */; };
+		D4D7FF0524DF436900ECDA2C /* DontentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7FF0424DF436900ECDA2C /* DontentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,7 +57,7 @@
 		D4288D4B24D628A10036C629 /* Histogram.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Histogram.swift; sourceTree = "<group>"; };
 		D44927FD24D5D65B000CC1DB /* Snapes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snapes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D449280024D5D65B000CC1DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D449280224D5D65B000CC1DB /* BontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BontentView.swift; sourceTree = "<group>"; };
+		D449280224D5D65B000CC1DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D449280424D5D65B000CC1DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D449280724D5D65B000CC1DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D449280A24D5D65B000CC1DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,10 +77,9 @@
 		D449283924D5F710000CC1DB /* LineChartVLinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartVLinesView.swift; sourceTree = "<group>"; };
 		D449283B24D5FB87000CC1DB /* LineChartLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLineView.swift; sourceTree = "<group>"; };
 		D449283D24D5FE6C000CC1DB /* Overload2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overload2D.swift; sourceTree = "<group>"; };
-		D4BBE0C124DE95B80075032E /* ChartDataBackdrop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartDataBackdrop.swift; sourceTree = "<group>"; };
 		D4BBE0C224DE95B80075032E /* ChartBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartBody.swift; sourceTree = "<group>"; };
-		D4D7FF0224DF403800ECDA2C /* LChartDataBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LChartDataBackdrop.swift; sourceTree = "<group>"; };
-		D4D7FF0424DF436900ECDA2C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartDataBackdrop.swift; sourceTree = "<group>"; };
+		D4D7FF0424DF436900ECDA2C /* DontentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DontentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,14 +132,15 @@
 			isa = PBXGroup;
 			children = (
 				D449280024D5D65B000CC1DB /* AppDelegate.swift */,
-				D449280224D5D65B000CC1DB /* BontentView.swift */,
+				D449280224D5D65B000CC1DB /* ContentView.swift */,
 				D449280424D5D65B000CC1DB /* Assets.xcassets */,
 				D449280924D5D65B000CC1DB /* Main.storyboard */,
 				D449280C24D5D65B000CC1DB /* Info.plist */,
 				D449280D24D5D65B000CC1DB /* Snapes.entitlements */,
+				D4D7FF0424DF436900ECDA2C /* DontentView.swift */,
 				D449283324D5E911000CC1DB /* ArkoniaLayout.swift */,
 				D4BBE0C224DE95B80075032E /* ChartBody.swift */,
-				D4BBE0C124DE95B80075032E /* ChartDataBackdrop.swift */,
+				D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */,
 				D4288D4B24D628A10036C629 /* Histogram.swift */,
 				D449282F24D5DBE1000CC1DB /* LineChartGraphView.swift */,
 				D4288D2F24D60C1B0036C629 /* LineChartHeaderView.swift */,
@@ -154,8 +153,6 @@
 				D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */,
 				D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */,
 				D449283D24D5FE6C000CC1DB /* Overload2D.swift */,
-				D4D7FF0224DF403800ECDA2C /* LChartDataBackdrop.swift */,
-				D4D7FF0424DF436900ECDA2C /* ContentView.swift */,
 			);
 			path = Snapes;
 			sourceTree = "<group>";
@@ -321,12 +318,11 @@
 				D4288D3124D60C1B0036C629 /* LineChartLegendoid.swift in Sources */,
 				D4288D4C24D628A10036C629 /* Histogram.swift in Sources */,
 				D4288D3024D60C1B0036C629 /* LineChartLegendSelect.swift in Sources */,
-				D4BBE0C324DE95B80075032E /* ChartDataBackdrop.swift in Sources */,
 				D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */,
 				D449283624D5EE7E000CC1DB /* LineChartXLabelsView.swift in Sources */,
-				D4D7FF0524DF436900ECDA2C /* ContentView.swift in Sources */,
+				D4D7FF0524DF436900ECDA2C /* DontentView.swift in Sources */,
 				D449283A24D5F710000CC1DB /* LineChartVLinesView.swift in Sources */,
-				D449280324D5D65B000CC1DB /* BontentView.swift in Sources */,
+				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
 				D449283C24D5FB87000CC1DB /* LineChartLineView.swift in Sources */,
 				D449283824D5F080000CC1DB /* LineChartHLinesView.swift in Sources */,
 				D449283024D5DBE1000CC1DB /* LineChartGraphView.swift in Sources */,
@@ -334,7 +330,7 @@
 				D449283224D5E63D000CC1DB /* LineChartYLabelsView.swift in Sources */,
 				D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */,
 				D449283E24D5FE6C000CC1DB /* Overload2D.swift in Sources */,
-				D4D7FF0324DF403800ECDA2C /* LChartDataBackdrop.swift in Sources */,
+				D4D7FF0324DF403800ECDA2C /* ChartDataBackdrop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

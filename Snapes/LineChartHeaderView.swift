@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct LineChartHeaderView: View {
+    let chartTitle: String
     let legend1Descriptor: LineChartLegendDescriptor
     let legend2Descriptor: LineChartLegendDescriptor
 
@@ -16,7 +17,7 @@ struct LineChartHeaderView: View {
             LineChartLegend(descriptor: legend1Descriptor)
                 .padding(.leading)
 
-            Spacer()
+            Text(chartTitle)
 
             LineChartLegend(descriptor: legend2Descriptor)
                 .padding(.trailing)
@@ -27,6 +28,7 @@ struct LineChartHeaderView: View {
 struct LineChartHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         LineChartHeaderView(
+            chartTitle: "Neuron Counts",
             legend1Descriptor: LineChartLegendDescriptor(
                 title: "Current",
                 titleEdge: .leading,

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LChartDataBackdrop: View {
+struct ChartDataBackdrop: View {
     enum AxisShape { case linear, log }
     enum GridLinesDirection { case vertical, horizontal }
 
@@ -23,23 +23,23 @@ struct LChartDataBackdrop: View {
         let (rectWidth, rectHeight) = direction == .vertical ?
             (gProxy.size.width, 0) : (0, gProxy.size.height)
 
-        return ForEach(0..<(10 + 1)) { ss in
+        return ForEach(0..<(5 + 1)) { ss in
             Path { path in
                 if direction == .vertical {
                     path.move(
-                        to: CGPoint(x: CGFloat(ss) * rectWidth / 10, y: 0)
+                        to: CGPoint(x: CGFloat(ss * 2) * rectWidth / 10, y: 0)
                     )
 
                     path.addLine(
-                        to: CGPoint(x: CGFloat(ss) * rectWidth / 10, y: gProxy.size.height)
+                        to: CGPoint(x: CGFloat(ss * 2) * rectWidth / 10, y: gProxy.size.height)
                     )
                 } else {
                     path.move(
-                        to: CGPoint(x: 0, y: CGFloat(ss) * rectHeight / 10)
+                        to: CGPoint(x: 0, y: CGFloat(ss * 2) * rectHeight / 10)
                     )
 
                     path.addLine(
-                        to: CGPoint(x: gProxy.size.width, y: CGFloat(ss) * rectHeight / 10)
+                        to: CGPoint(x: gProxy.size.width, y: CGFloat(ss * 2) * rectHeight / 10)
                     )
                 }
 
@@ -62,8 +62,8 @@ struct LChartDataBackdrop: View {
     }
 }
 
-struct LChartDataBackdrop_Previews: PreviewProvider {
+struct ChartDataBackdrop_Previews: PreviewProvider {
     static var previews: some View {
-        LChartDataBackdrop().frame(width: 500, height: 200)
+        ChartDataBackdrop().frame(width: 500, height: 200)
     }
 }
