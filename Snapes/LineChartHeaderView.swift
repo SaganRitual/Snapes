@@ -8,25 +8,28 @@
 import SwiftUI
 
 struct LineChartHeaderView: View {
-    let title: String
     let legend1Descriptor: LineChartLegendDescriptor
     let legend2Descriptor: LineChartLegendDescriptor
 
     var body: some View {
         HStack {
             LineChartLegend(descriptor: legend1Descriptor)
-            Text(title).frame(minWidth: 200).font(.headline)
+                .padding(.leading)
+
+            Spacer()
+
             LineChartLegend(descriptor: legend2Descriptor)
-        }.padding(5).border(Color.black, width: 1)
+                .padding(.trailing)
+        }
     }
 }
 
 struct LineChartHeaderView_Previews: PreviewProvider {
     static var previews: some View {
         LineChartHeaderView(
-            title: "Neuron Counts",
             legend1Descriptor: LineChartLegendDescriptor(
                 title: "Current",
+                titleEdge: .leading,
                 legendoidDescriptors: [
                     (Color.yellow, "Min"),
                     (Color.blue, "Max"),
@@ -35,6 +38,7 @@ struct LineChartHeaderView_Previews: PreviewProvider {
             ),
             legend2Descriptor: LineChartLegendDescriptor(
                 title: "All-time",
+                titleEdge: .trailing,
                 legendoidDescriptors: [
                     (Color.orange, "Min"),
                     (Color.purple, "Max"),

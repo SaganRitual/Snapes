@@ -2,6 +2,7 @@ import SwiftUI
 
 struct LineChartLegendDescriptor {
     let title: String
+    let titleEdge: Edge
     let legendoidDescriptors: [(Color, String)]
 }
 
@@ -10,17 +11,27 @@ struct LineChartLegend: View {
 
     var body: some View {
         VStack(alignment: .center) {
-            Text(descriptor.title)
-                .font(.system(size: 12))
-
             HStack(alignment: .center) {
+                if descriptor.titleEdge == .leading {
+                    Text(descriptor.title)
+                        .font(.footnote)
+                        .padding(.trailing)
+                }
+
                 VStack {
                     ForEach(0..<descriptor.legendoidDescriptors.count) { ss in
                         LineChartLegendoid(
                             color: self.descriptor.legendoidDescriptors[ss].0,
-                            label: self.descriptor.legendoidDescriptors[ss].1
+                            label: self.descriptor.legendoidDescriptors[ss].1,
+                            titleEdge: descriptor.titleEdge
                         )
                     }
+                }
+
+                if descriptor.titleEdge == .trailing {
+                    Text(descriptor.title)
+                        .font(.footnote)
+                        .padding(.leading)
                 }
             }
         }
@@ -34,13 +45,13 @@ struct LineChartLegend_Previews: PreviewProvider {
         LineChartLegend(
             descriptor: LineChartLegendDescriptor(
                 title: "Current",
+                titleEdge: .trailing,
                 legendoidDescriptors: [
                     (Color.green, "Avg"),
                     (Color(NSColor.cyan), "Med"),
                     (Color.blue, "Max")
                 ]
             )
-
         )
     }
 }

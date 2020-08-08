@@ -5,9 +5,17 @@ struct LineChartLegendoid: View {
 
     let color: Color
     let label: String
+    let titleEdge: Edge
 
     var body: some View {
         HStack {
+            if titleEdge == .trailing {
+                Text(label)
+                    .font(.footnote)
+                    .foregroundColor(isActive ? .white : .gray)
+                    .frame(minWidth: 40)
+            }
+
             Button(action: {
                 self.isActive.toggle()
             }) {
@@ -17,12 +25,13 @@ struct LineChartLegendoid: View {
             }
             .buttonStyle(PlainButtonStyle())
 
-            Spacer()
-
-            Text(label)
-                .font(.system(size: 12))
-                .foregroundColor(isActive ? .white : .gray)
-        }.frame(maxWidth: 50)
+            if titleEdge == .leading {
+                Text(label)
+                    .font(.footnote)
+                    .foregroundColor(isActive ? .white : .gray)
+                    .frame(minWidth: 40)
+            }
+        }
     }
 }
 
@@ -30,7 +39,8 @@ struct ChartLegendoid_Previews: PreviewProvider {
     static var previews: some View {
         LineChartLegendoid(
             color: Color.blue,
-            label: "Min"
+            label: "Min",
+            titleEdge: .trailing
         )
     }
 }

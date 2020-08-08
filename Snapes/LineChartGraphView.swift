@@ -76,6 +76,6 @@ struct LineChartGraphView: View {
 
 struct LineChartGraphView_Previews: PreviewProvider {
     static var previews: some View {
-        LineChartGraphView()
+        LineChartGraphView().frame(maxWidth: 350)
     }
 }
