@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Snapes
-//
-//  Created by Rob Bishop on 8/1/20.
-//
-
 import SwiftUI
 
 extension ArkoniaLayout {
@@ -16,30 +9,7 @@ struct ContentView: View {
     @State var textUnitSize = CGSize.zero
 
     var body: some View {
-        VStack {
-            LineChartHeaderView(
-                chartTitle: "Foobar",
-                legend1Descriptor: LineChartLegendDescriptor(
-                    title: "Current",
-                    titleEdge: .leading,
-                    legendoidDescriptors: [
-                        (.red, "Min"), (.green, "Max")
-                    ]
-                ),
-                legend2Descriptor: LineChartLegendDescriptor(
-                    title: "All-time",
-                    titleEdge: .trailing,
-                    legendoidDescriptors: [
-                        (.blue, "Min"), (.orange, "Max")
-                    ]
-                )
-            )
-            .padding(.top)
-
-            ChartDataBackdrop()
-                .padding(5)
-                .background(Color.gray)
-        }
+        LineChartGraphView()
     }
 }
 

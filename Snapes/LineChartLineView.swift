@@ -1,26 +1,18 @@
-//
-//  LineChartLineView.swift
-//  Snapes
-//
-//  Created by Rob Bishop on 8/1/20.
-//
-
 import SwiftUI
 
 struct LineChartLineView: View {
     @EnvironmentObject var histogram: Histogram
-    @State var textUnitSize = ArkoniaLayout.labelTextSize
 
     let viewWidth: CGFloat
     let viewHeight: CGFloat
 
     func drawLine() -> Path {
+        print("drawLine")
         let points: [CGPoint] = (0..<10).map {
             CGSize(width: viewWidth, height: viewHeight).asPoint() *
-            CGPoint(x: CGFloat($0), y: CGFloat(LineChartGraphView.histogram.theBuckets[$0].cSamples))
+            CGPoint(x: CGFloat($0), y: CGFloat(self.histogram.theBuckets[$0].cSamples))
         }
 
-//        print("drawLine() \(points)")
         var isFirst = true
         var prevPoint: CGPoint?
         var path = Path()
@@ -49,7 +41,7 @@ struct LineChartLineView: View {
         GeometryReader { gr in
             drawLine()
                 .stroke(lineWidth: 1)
-                .foregroundColor(LineChartGraphView.histogram.hackyTrigger ? .white : .blue)
+                .foregroundColor(self.histogram.hackyTrigger ? .white : .blue)
                 .offset(x: gr.size.width / 10 / 2)
         }
     }

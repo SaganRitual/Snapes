@@ -25,13 +25,13 @@ struct LineChartLegend: View {
                             label: self.descriptor.legendoidDescriptors[ss].1,
                             titleEdge: descriptor.titleEdge
                         )
-                    }
+                    }.padding([.leading, .trailing], 5)
                 }
 
                 if descriptor.titleEdge == .trailing {
                     Text(descriptor.title)
                         .font(.footnote)
-                        .padding(.leading)
+                        .padding([.leading, .trailing])
                 }
             }
         }

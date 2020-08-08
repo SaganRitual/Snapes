@@ -13,14 +13,20 @@ struct LineChartHeaderView: View {
     let legend2Descriptor: LineChartLegendDescriptor
 
     var body: some View {
-        HStack {
-            LineChartLegend(descriptor: legend1Descriptor)
-                .padding(.leading)
-
+        VStack {
             Text(chartTitle)
+                .font(.caption)
+                .foregroundColor(.white)
 
-            LineChartLegend(descriptor: legend2Descriptor)
-                .padding(.trailing)
+            HStack {
+                LineChartLegend(descriptor: legend1Descriptor)
+                    .frame(maxWidth: .infinity)
+
+                Spacer()
+
+                LineChartLegend(descriptor: legend2Descriptor)
+                    .frame(maxWidth: .infinity)
+            }
         }
     }
 }
@@ -48,5 +54,6 @@ struct LineChartHeaderView_Previews: PreviewProvider {
                 ]
             )
         )
+        .frame(maxWidth: .infinity)
     }
 }

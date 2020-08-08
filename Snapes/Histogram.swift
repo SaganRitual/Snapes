@@ -9,7 +9,6 @@ class Histogram: ObservableObject {
 
         func addSample(_ sample: Double) {
             cSamples += 1; sumOfAllSamples += sample
-//            print("addSample(\(sample)) -> cSamples \(cSamples) sum \(sumOfAllSamples)")
         }
 
         private(set) var cSamples: Int = 0
@@ -86,7 +85,6 @@ class Histogram: ObservableObject {
             ss = s < cBuckets ? s : cBuckets - 1
         }
 
-//        print("bucket \(ss) ", terminator: "")
         return ss
     }
 }

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ChartDataBackdrop: View {
+    @EnvironmentObject var histogram: Histogram
+
     enum AxisShape { case linear, log }
     enum GridLinesDirection { case vertical, horizontal }
 
@@ -57,6 +59,9 @@ struct ChartDataBackdrop: View {
 
                 drawGridLines(gr, .horizontal)
                 drawGridLines(gr, .vertical)
+
+                LineChartLineView(viewWidth: 100, viewHeight: 100)
+                    .environmentObject(histogram)
             }
         }
     }
