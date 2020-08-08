@@ -28,7 +28,8 @@ struct ContentView: View {
                 )
             )
 
-            LineChartGraphView().environmentObject(LineChartGraphView.histogram)
+            ChartBody().frame(width: 185, height: 100)
+//            LineChartGraphView().environmentObject(LineChartGraphView.histogram)
         }
     }
 }
