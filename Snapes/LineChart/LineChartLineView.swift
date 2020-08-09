@@ -2,12 +2,14 @@ import SwiftUI
 
 struct LineChartLineView: View {
     @EnvironmentObject var histogram: Histogram
+    @State private var isActive: Bool
 
     let viewWidth: CGFloat
     let viewHeight: CGFloat
 
     func drawLine() -> Path {
         var path = Path()
+        if !isActive { return path }
 
         guard let yValues = histogram.getScalarDistribution(reset: false) else {
             return path

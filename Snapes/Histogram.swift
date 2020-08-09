@@ -25,6 +25,8 @@ class Histogram: ObservableObject {
 
     enum InputRangeMode { case minusOneToOne, zeroToOne, zeroToMax(Int) }
 
+    var count: Int { self.cBuckets }
+
     init(_ cColumns: Int, _ inputRangeMode: InputRangeMode) {
         self.cBuckets = cColumns
         self.dBuckets = Double(cColumns)

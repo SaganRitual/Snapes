@@ -12,6 +12,20 @@
 		D411041F24DFA2BC0043A570 /* BarChartBarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411041E24DFA2BC0043A570 /* BarChartBarsView.swift */; };
 		D411042124DFA57A0043A570 /* BarChartGraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042024DFA57A0043A570 /* BarChartGraphView.swift */; };
 		D411042324DFA5F80043A570 /* BarChartHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042224DFA5F80043A570 /* BarChartHeaderView.swift */; };
+		D411043024DFDED80043A570 /* Curve.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042624DFDED80043A570 /* Curve.swift */; };
+		D411043324DFDED80043A570 /* NeuronsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042924DFDED80043A570 /* NeuronsView.swift */; };
+		D411043424DFDED80043A570 /* AlmanacHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042A24DFDED80043A570 /* AlmanacHudView.swift */; };
+		D411043524DFDED80043A570 /* AgeHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042B24DFDED80043A570 /* AgeHudView.swift */; };
+		D411043624DFDED80043A570 /* PopulationHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042C24DFDED80043A570 /* PopulationHudView.swift */; };
+		D411043724DFDED80043A570 /* OffspringHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042D24DFDED80043A570 /* OffspringHudView.swift */; };
+		D411043824DFDED80043A570 /* FoodHitRateHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042E24DFDED80043A570 /* FoodHitRateHudView.swift */; };
+		D411043924DFDED80043A570 /* BrainyHudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411042F24DFDED80043A570 /* BrainyHudView.swift */; };
+		D411043B24DFDF060043A570 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411043A24DFDF060043A570 /* GameView.swift */; };
+		D411043D24DFDFD10043A570 /* AKRandomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411043C24DFDFD10043A570 /* AKRandomer.swift */; };
+		D411044024DFE0190043A570 /* Tensor.Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411043E24DFE0190043A570 /* Tensor.Utilities.swift */; };
+		D411044124DFE0190043A570 /* Tensor.Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411043F24DFE0190043A570 /* Tensor.Random.swift */; };
+		D411044324DFE2410043A570 /* PopulationStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411044224DFE2410043A570 /* PopulationStats.swift */; };
+		D411044524E011D20043A570 /* HighwaterStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = D411044424E011D20043A570 /* HighwaterStats.swift */; };
 		D4288D3024D60C1B0036C629 /* LineChartLegendSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4288D2C24D60C1B0036C629 /* LineChartLegendSelect.swift */; };
 		D4288D3124D60C1B0036C629 /* LineChartLegendoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4288D2D24D60C1B0036C629 /* LineChartLegendoid.swift */; };
 		D4288D3224D60C1B0036C629 /* LineChartLegend.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4288D2E24D60C1B0036C629 /* LineChartLegend.swift */; };
@@ -56,6 +70,22 @@
 		D411041E24DFA2BC0043A570 /* BarChartBarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartBarsView.swift; sourceTree = "<group>"; };
 		D411042024DFA57A0043A570 /* BarChartGraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartGraphView.swift; sourceTree = "<group>"; };
 		D411042224DFA5F80043A570 /* BarChartHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartHeaderView.swift; sourceTree = "<group>"; };
+		D411042624DFDED80043A570 /* Curve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Curve.swift; sourceTree = "<group>"; };
+		D411042724DFDED80043A570 /* SundialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundialView.swift; sourceTree = "<group>"; };
+		D411042824DFDED80043A570 /* SundialLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SundialLayout.swift; sourceTree = "<group>"; };
+		D411042924DFDED80043A570 /* NeuronsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NeuronsView.swift; sourceTree = "<group>"; };
+		D411042A24DFDED80043A570 /* AlmanacHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlmanacHudView.swift; sourceTree = "<group>"; };
+		D411042B24DFDED80043A570 /* AgeHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AgeHudView.swift; sourceTree = "<group>"; };
+		D411042C24DFDED80043A570 /* PopulationHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulationHudView.swift; sourceTree = "<group>"; };
+		D411042D24DFDED80043A570 /* OffspringHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OffspringHudView.swift; sourceTree = "<group>"; };
+		D411042E24DFDED80043A570 /* FoodHitRateHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodHitRateHudView.swift; sourceTree = "<group>"; };
+		D411042F24DFDED80043A570 /* BrainyHudView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrainyHudView.swift; sourceTree = "<group>"; };
+		D411043A24DFDF060043A570 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		D411043C24DFDFD10043A570 /* AKRandomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKRandomer.swift; sourceTree = "<group>"; };
+		D411043E24DFE0190043A570 /* Tensor.Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.Utilities.swift; sourceTree = "<group>"; };
+		D411043F24DFE0190043A570 /* Tensor.Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tensor.Random.swift; sourceTree = "<group>"; };
+		D411044224DFE2410043A570 /* PopulationStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopulationStats.swift; sourceTree = "<group>"; };
+		D411044424E011D20043A570 /* HighwaterStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighwaterStats.swift; sourceTree = "<group>"; };
 		D4288D2C24D60C1B0036C629 /* LineChartLegendSelect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartLegendSelect.swift; sourceTree = "<group>"; };
 		D4288D2D24D60C1B0036C629 /* LineChartLegendoid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartLegendoid.swift; sourceTree = "<group>"; };
 		D4288D2E24D60C1B0036C629 /* LineChartLegend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineChartLegend.swift; sourceTree = "<group>"; };
@@ -136,6 +166,31 @@
 			path = BarChart;
 			sourceTree = "<group>";
 		};
+		D411042424DFDED80043A570 /* Hud */ = {
+			isa = PBXGroup;
+			children = (
+				D411042524DFDED80043A570 /* Sundial */,
+				D411042924DFDED80043A570 /* NeuronsView.swift */,
+				D411042A24DFDED80043A570 /* AlmanacHudView.swift */,
+				D411042B24DFDED80043A570 /* AgeHudView.swift */,
+				D411042C24DFDED80043A570 /* PopulationHudView.swift */,
+				D411042D24DFDED80043A570 /* OffspringHudView.swift */,
+				D411042E24DFDED80043A570 /* FoodHitRateHudView.swift */,
+				D411042F24DFDED80043A570 /* BrainyHudView.swift */,
+			);
+			path = Hud;
+			sourceTree = "<group>";
+		};
+		D411042524DFDED80043A570 /* Sundial */ = {
+			isa = PBXGroup;
+			children = (
+				D411042624DFDED80043A570 /* Curve.swift */,
+				D411042724DFDED80043A570 /* SundialView.swift */,
+				D411042824DFDED80043A570 /* SundialLayout.swift */,
+			);
+			path = Sundial;
+			sourceTree = "<group>";
+		};
 		D44927F424D5D65A000CC1DB = {
 			isa = PBXGroup;
 			children = (
@@ -160,7 +215,11 @@
 		D44927FF24D5D65B000CC1DB /* Snapes */ = {
 			isa = PBXGroup;
 			children = (
+				D411044224DFE2410043A570 /* PopulationStats.swift */,
+				D411043F24DFE0190043A570 /* Tensor.Random.swift */,
+				D411043E24DFE0190043A570 /* Tensor.Utilities.swift */,
 				D411041924DFA1940043A570 /* BarChart */,
+				D411042424DFDED80043A570 /* Hud */,
 				D411041824DFA0160043A570 /* LineChart */,
 				D449280024D5D65B000CC1DB /* AppDelegate.swift */,
 				D449280224D5D65B000CC1DB /* ContentView.swift */,
@@ -172,6 +231,9 @@
 				D449283324D5E911000CC1DB /* ArkoniaLayout.swift */,
 				D4288D4B24D628A10036C629 /* Histogram.swift */,
 				D449283D24D5FE6C000CC1DB /* Overload2D.swift */,
+				D411043A24DFDF060043A570 /* GameView.swift */,
+				D411043C24DFDFD10043A570 /* AKRandomer.swift */,
+				D411044424E011D20043A570 /* HighwaterStats.swift */,
 			);
 			path = Snapes;
 			sourceTree = "<group>";
@@ -336,21 +398,35 @@
 				D4288D3324D60C1B0036C629 /* LineChartHeaderView.swift in Sources */,
 				D4288D3124D60C1B0036C629 /* LineChartLegendoid.swift in Sources */,
 				D4D7FF0824DF61A600ECDA2C /* LineChartGraphView.swift in Sources */,
+				D411043B24DFDF060043A570 /* GameView.swift in Sources */,
 				D4288D4C24D628A10036C629 /* Histogram.swift in Sources */,
+				D411043924DFDED80043A570 /* BrainyHudView.swift in Sources */,
 				D4288D3024D60C1B0036C629 /* LineChartLegendSelect.swift in Sources */,
 				D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */,
+				D411043824DFDED80043A570 /* FoodHitRateHudView.swift in Sources */,
+				D411043424DFDED80043A570 /* AlmanacHudView.swift in Sources */,
+				D411044324DFE2410043A570 /* PopulationStats.swift in Sources */,
 				D4D7FF0524DF436900ECDA2C /* DontentView.swift in Sources */,
+				D411043324DFDED80043A570 /* NeuronsView.swift in Sources */,
 				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
 				D4288D3224D60C1B0036C629 /* LineChartLegend.swift in Sources */,
 				D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */,
 				D449283E24D5FE6C000CC1DB /* Overload2D.swift in Sources */,
 				D411041D24DFA21C0043A570 /* BarChartDataBackdrop.swift in Sources */,
+				D411043624DFDED80043A570 /* PopulationHudView.swift in Sources */,
 				D4D7FF0324DF403800ECDA2C /* ChartDataBackdrop.swift in Sources */,
+				D411044024DFE0190043A570 /* Tensor.Utilities.swift in Sources */,
+				D411044524E011D20043A570 /* HighwaterStats.swift in Sources */,
 				D411042324DFA5F80043A570 /* BarChartHeaderView.swift in Sources */,
+				D411043024DFDED80043A570 /* Curve.swift in Sources */,
 				D4D7FF0924DF6D0000ECDA2C /* LineChartLineView.swift in Sources */,
 				D411041B24DFA1E40043A570 /* BarChartBody.swift in Sources */,
+				D411043724DFDED80043A570 /* OffspringHudView.swift in Sources */,
+				D411043524DFDED80043A570 /* AgeHudView.swift in Sources */,
 				D411042124DFA57A0043A570 /* BarChartGraphView.swift in Sources */,
+				D411043D24DFDFD10043A570 /* AKRandomer.swift in Sources */,
 				D411041F24DFA2BC0043A570 /* BarChartBarsView.swift in Sources */,
+				D411044124DFE0190043A570 /* Tensor.Random.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
