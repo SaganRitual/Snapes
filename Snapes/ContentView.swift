@@ -10,6 +10,10 @@ struct ContentView: View {
 
     var body: some View {
         LineChartGraphView()
+            .frame(
+                width: ArkoniaLayout.frameWidth * 2,
+                height: ArkoniaLayout.hudHeight * 2
+            )
     }
 }
 

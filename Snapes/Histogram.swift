@@ -40,9 +40,9 @@ class Histogram: ObservableObject {
 
     func getScalarDistribution(reset: Bool) -> [CGFloat]? {
         guard let max = theBuckets.max(by: { $0.cSamples < $1.cSamples }) else
-            { return [] }
+            { return nil }
 
-        if max.cSamples == 0 { return [] }
+        if max.cSamples == 0 { return nil }
 
         defer { if reset { theBuckets.forEach { $0.reset() } } }
         return theBuckets.map { CGFloat($0.cSamples) / CGFloat(max.cSamples) }

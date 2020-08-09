@@ -19,9 +19,7 @@
 		D449280B24D5D65B000CC1DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D449280924D5D65B000CC1DB /* Main.storyboard */; };
 		D449281724D5D65B000CC1DB /* SnapesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449281624D5D65B000CC1DB /* SnapesTests.swift */; };
 		D449282224D5D65B000CC1DB /* SnapesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449282124D5D65B000CC1DB /* SnapesUITests.swift */; };
-		D449283224D5E63D000CC1DB /* LineChartYLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */; };
 		D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283324D5E911000CC1DB /* ArkoniaLayout.swift */; };
-		D449283624D5EE7E000CC1DB /* LineChartXLabelsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */; };
 		D449283E24D5FE6C000CC1DB /* Overload2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D449283D24D5FE6C000CC1DB /* Overload2D.swift */; };
 		D4BBE0C424DE95B80075032E /* ChartBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBE0C224DE95B80075032E /* ChartBody.swift */; };
 		D4D7FF0324DF403800ECDA2C /* ChartDataBackdrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */; };
@@ -67,9 +65,7 @@
 		D449281D24D5D65B000CC1DB /* SnapesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnapesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D449282124D5D65B000CC1DB /* SnapesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapesUITests.swift; sourceTree = "<group>"; };
 		D449282324D5D65B000CC1DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartYLabelsView.swift; sourceTree = "<group>"; };
 		D449283324D5E911000CC1DB /* ArkoniaLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArkoniaLayout.swift; sourceTree = "<group>"; };
-		D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartXLabelsView.swift; sourceTree = "<group>"; };
 		D449283B24D5FB87000CC1DB /* LineChartLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineChartLineView.swift; sourceTree = "<group>"; };
 		D449283D24D5FE6C000CC1DB /* Overload2D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Overload2D.swift; sourceTree = "<group>"; };
 		D4BBE0C224DE95B80075032E /* ChartBody.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartBody.swift; sourceTree = "<group>"; };
@@ -103,6 +99,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D411041824DFA0160043A570 /* LineChart */ = {
+			isa = PBXGroup;
+			children = (
+				D4BBE0C224DE95B80075032E /* ChartBody.swift */,
+				D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */,
+				D4D7FF0724DF61A600ECDA2C /* LineChartGraphView.swift */,
+				D4288D2F24D60C1B0036C629 /* LineChartHeaderView.swift */,
+				D4288D2E24D60C1B0036C629 /* LineChartLegend.swift */,
+				D4288D2D24D60C1B0036C629 /* LineChartLegendoid.swift */,
+				D4288D2C24D60C1B0036C629 /* LineChartLegendSelect.swift */,
+				D449283B24D5FB87000CC1DB /* LineChartLineView.swift */,
+			);
+			path = LineChart;
+			sourceTree = "<group>";
+		};
+		D411041924DFA1940043A570 /* BarChart */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BarChart;
+			sourceTree = "<group>";
+		};
 		D44927F424D5D65A000CC1DB = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +145,8 @@
 		D44927FF24D5D65B000CC1DB /* Snapes */ = {
 			isa = PBXGroup;
 			children = (
+				D411041924DFA1940043A570 /* BarChart */,
+				D411041824DFA0160043A570 /* LineChart */,
 				D449280024D5D65B000CC1DB /* AppDelegate.swift */,
 				D449280224D5D65B000CC1DB /* ContentView.swift */,
 				D449280424D5D65B000CC1DB /* Assets.xcassets */,
@@ -135,17 +155,7 @@
 				D449280D24D5D65B000CC1DB /* Snapes.entitlements */,
 				D4D7FF0424DF436900ECDA2C /* DontentView.swift */,
 				D449283324D5E911000CC1DB /* ArkoniaLayout.swift */,
-				D4BBE0C224DE95B80075032E /* ChartBody.swift */,
-				D4D7FF0224DF403800ECDA2C /* ChartDataBackdrop.swift */,
 				D4288D4B24D628A10036C629 /* Histogram.swift */,
-				D4D7FF0724DF61A600ECDA2C /* LineChartGraphView.swift */,
-				D4288D2F24D60C1B0036C629 /* LineChartHeaderView.swift */,
-				D4288D2E24D60C1B0036C629 /* LineChartLegend.swift */,
-				D4288D2D24D60C1B0036C629 /* LineChartLegendoid.swift */,
-				D4288D2C24D60C1B0036C629 /* LineChartLegendSelect.swift */,
-				D449283B24D5FB87000CC1DB /* LineChartLineView.swift */,
-				D449283524D5EE7E000CC1DB /* LineChartXLabelsView.swift */,
-				D449283124D5E63D000CC1DB /* LineChartYLabelsView.swift */,
 				D449283D24D5FE6C000CC1DB /* Overload2D.swift */,
 			);
 			path = Snapes;
@@ -314,11 +324,9 @@
 				D4288D4C24D628A10036C629 /* Histogram.swift in Sources */,
 				D4288D3024D60C1B0036C629 /* LineChartLegendSelect.swift in Sources */,
 				D449283424D5E911000CC1DB /* ArkoniaLayout.swift in Sources */,
-				D449283624D5EE7E000CC1DB /* LineChartXLabelsView.swift in Sources */,
 				D4D7FF0524DF436900ECDA2C /* DontentView.swift in Sources */,
 				D449280324D5D65B000CC1DB /* ContentView.swift in Sources */,
 				D4288D3224D60C1B0036C629 /* LineChartLegend.swift in Sources */,
-				D449283224D5E63D000CC1DB /* LineChartYLabelsView.swift in Sources */,
 				D449280124D5D65B000CC1DB /* AppDelegate.swift in Sources */,
 				D449283E24D5FE6C000CC1DB /* Overload2D.swift in Sources */,
 				D4D7FF0324DF403800ECDA2C /* ChartDataBackdrop.swift in Sources */,

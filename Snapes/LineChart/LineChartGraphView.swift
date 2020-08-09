@@ -21,10 +21,10 @@ struct LineChartGraphView: View {
     }
 
     func updateHistogram() {
-        for _ in 0..<10 {
-            let low = Double.random(in: -100..<0)
-            let high = Double.random(in: 0..<100)
-            self.histogram.track(sample: Double.random(in: low..<high) / 100)
+        let L = Int.random(in: 1..<100)
+        let M = Double.random(in: -1..<1)
+        (0..<L).forEach { _ in
+            self.histogram.track(sample: M)
         }
 
         self.histogram.hackyTrigger = !self.histogram.hackyTrigger
