@@ -60,7 +60,7 @@ struct ChartDataBackdrop: View {
                 drawGridLines(gr, .horizontal)
                 drawGridLines(gr, .vertical)
 
-                LineChartLineView(viewWidth: 100, viewHeight: 100)
+                LineChartLineView(viewWidth: gr.size.width, viewHeight: gr.size.height)
                     .environmentObject(histogram)
             }
         }

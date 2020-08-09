@@ -1,9 +1,7 @@
 import SwiftUI
 
 struct LineChartGraphView: View {
-    @State var textUnitSize = ArkoniaLayout.labelTextSize
-
-    static let histogram = Histogram(10, .minusOneToOne)
+    let histogram = Histogram(10, .minusOneToOne)
 
     let scale: CGSize
     var timer: Timer!
@@ -24,52 +22,40 @@ struct LineChartGraphView: View {
 
     func updateHistogram() {
         for _ in 0..<10 {
-            LineChartGraphView.histogram.track(sample: Double.random(in: -1..<1))
+            let low = Double.random(in: -100..<0)
+            let high = Double.random(in: 0..<100)
+            self.histogram.track(sample: Double.random(in: low..<high) / 100)
         }
 
-//        print("update", LineChartGraphView.histogram.theBuckets)
-
-        LineChartGraphView.histogram.hackyTrigger = !LineChartGraphView.histogram.hackyTrigger
+        self.histogram.hackyTrigger = !self.histogram.hackyTrigger
         scheduleUpdate()
     }
 
     var body: some View {
-        ZStack {
-            // I think and hope this one is holding the size of
-            // our overall graph view section fixed
-            Rectangle()
-                .frame(width: 1.1 * xScale, height: 1.1 * yScale)
-                .foregroundColor(Color(white: 0.4))
-
-            LineChartLineView(viewWidth: xScale, viewHeight: yScale)
-                .environmentObject(LineChartGraphView.histogram)
-                .frame(width: xScale, height: yScale)
-
-            LineChartHLinesView()
-                .frame(width: 1.0 * xScale, height: 1.0 * yScale)
-                .foregroundColor(Color(white: 0.3))
-                .offset(
-                    x: textUnitSize.width * 0.8,
-                    y: textUnitSize.height * 1
+        VStack {
+            LineChartHeaderView(
+                chartTitle: "Neuron Counts",
+                legend1Descriptor: LineChartLegendDescriptor(
+                    title: "Current",
+                    titleEdge: .leading,
+                    legendoidDescriptors: [
+                        (.red, "Min"), (.green, "Max")
+                    ]
+                ),
+                legend2Descriptor: LineChartLegendDescriptor(
+                    title: "All-time",
+                    titleEdge: .trailing,
+                    legendoidDescriptors: [
+                        (.blue, "Min"), (.orange, "Max")
+                    ]
                 )
+            )
+            .padding(.top, 5 )
 
-            LineChartVLinesView()
-                .frame(width: 1.0 * xScale, height: 1.1 * yScale)
-                .foregroundColor(Color(white: 0.3))
-                .offset(
-                    x: (-0.8 * textUnitSize.width) + 0.1 * xScale,
-                    y: -2 * textUnitSize.height
-                )
-
-            LineChartYLabelsView()
-                .frame(width: 0.1 * xScale, height: 1.0 * yScale)
-                .background(Color(white: 0.4))
-                .offset(x: -0.5 * xScale, y: (-0.05 * yScale))
-
-            LineChartXLabelsView()
-                .frame(width: 1.0 * xScale, height: 0.1 * yScale)
-                .background(Color(white: 0.4))
-                .offset(x: 0.05 * xScale, y: 0.5 * yScale)
+            ChartDataBackdrop()
+                .environmentObject(histogram)
+                .padding(5)
+                .background(Color.gray)
         }
     }
 }

@@ -7,10 +7,8 @@ struct LineChartLineView: View {
     let viewHeight: CGFloat
 
     func drawLine() -> Path {
-        print("drawLine")
-        let points: [CGPoint] = (0..<10).map {
-            CGSize(width: viewWidth, height: viewHeight).asPoint() *
-            CGPoint(x: CGFloat($0), y: CGFloat(self.histogram.theBuckets[$0].cSamples))
+        guard let yValues = histogram.getScalarDistribution(reset: true) else {
+            return Path { _ in }
         }
 
         var isFirst = true
@@ -19,17 +17,24 @@ struct LineChartLineView: View {
 
         // obv, there are lots of ways of doing this. let's
         // please refrain from yak shaving in the comments
-        for point in points {
-            if let prevPoint = prevPoint {
-                let midPoint = (point + prevPoint) / 2
+        for (x_, y_) in zip(0..., yValues) {
+            let x = (CGFloat(x_) + 0.5) / 10 * viewWidth
+            let y = y_ * viewHeight
 
-                if isFirst { path.addLine(to: midPoint) }
+            let currentPoint = CGPoint(x: x, y: y)
+
+            if let prevPoint = prevPoint {
+                let midPoint = (currentPoint + prevPoint) / 2
+
+                if isFirst { path.addLine(to: currentPoint) }
                 else       { path.addQuadCurve(to: midPoint, control: prevPoint) }
 
-                isFirst = false
-            } else { path.move(to: point) }
+                print("curr", currentPoint, "from", midPoint, "ctrl", prevPoint)
 
-            prevPoint = point
+                isFirst = false
+            } else { path.move(to: currentPoint) }
+
+            prevPoint = currentPoint
         }
 
         if let prevPoint = prevPoint { path.addLine(to: prevPoint) }
@@ -42,7 +47,6 @@ struct LineChartLineView: View {
             drawLine()
                 .stroke(lineWidth: 1)
                 .foregroundColor(self.histogram.hackyTrigger ? .white : .blue)
-                .offset(x: gr.size.width / 10 / 2)
         }
     }
 }

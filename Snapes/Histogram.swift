@@ -2,10 +2,7 @@ import SwiftUI
 
 class Histogram: ObservableObject {
     class Bucket: CustomDebugStringConvertible {
-        var debugDescription: String { "Bucket hit \(self.cSamples) sum \(self.sumOfAllSamples) avg \(self.average) nrm \(self.normalized)" }
-        var getUnitScale: (() -> Double)!
-
-        func inject(_ getUnitScale: @escaping () -> Double) { self.getUnitScale = getUnitScale }
+        var debugDescription: String { "Bucket hit \(self.cSamples) sum \(self.sumOfAllSamples) avg \(self.average)" }
 
         func addSample(_ sample: Double) {
             cSamples += 1; sumOfAllSamples += sample
@@ -15,11 +12,8 @@ class Histogram: ObservableObject {
         private(set) var sumOfAllSamples: Double = 0
 
         var average: Double { sumOfAllSamples == 0 ? 0 : Double(cSamples) / sumOfAllSamples }
-        var normalized: Double {
-            let us = getUnitScale()
-            if us == 0 { return 0 }
-            return average / us
-        }
+
+        func reset() { cSamples = 0; sumOfAllSamples = 0 }
     }
 
     let cBuckets: Int
@@ -42,8 +36,16 @@ class Histogram: ObservableObject {
         case .zeroToOne:                self.inputRange = Double(0)..<Double(1)
         case let .zeroToMax(rangeTop):  self.inputRange = Double(0)..<Double(rangeTop)
         }
+    }
 
-        self.theBuckets.forEach { $0.inject(getUnitScale) }
+    func getScalarDistribution(reset: Bool) -> [CGFloat]? {
+        guard let max = theBuckets.max(by: { $0.cSamples < $1.cSamples }) else
+            { return [] }
+
+        if max.cSamples == 0 { return [] }
+
+        defer { if reset { theBuckets.forEach { $0.reset() } } }
+        return theBuckets.map { CGFloat($0.cSamples) / CGFloat(max.cSamples) }
     }
 
     func getUnitScale() -> Double {
