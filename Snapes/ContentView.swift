@@ -9,11 +9,19 @@ struct ContentView: View {
     @State var textUnitSize = CGSize.zero
 
     var body: some View {
-        LineChartGraphView()
-            .frame(
-                width: ArkoniaLayout.frameWidth * 2,
-                height: ArkoniaLayout.hudHeight * 2
-            )
+        VStack {
+            LineChartGraphView()
+                .frame(
+                    width: ArkoniaLayout.frameWidth * 2,
+                    height: ArkoniaLayout.hudHeight * 2
+                )
+
+            BarChartGraphView()
+                .frame(
+                    width: ArkoniaLayout.frameWidth * 2,
+                    height: ArkoniaLayout.hudHeight * 2
+                )
+        }
     }
 }
 
